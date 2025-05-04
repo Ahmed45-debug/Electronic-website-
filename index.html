@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElectroZone | Your Gadget Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">ElectroZone</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">about</a>
+     <a href="#offer">Offers</a>  
+<a href="#products">Products</a>
+   
+    <a href="#blog">blog</a>
+      
+ <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+       <div id="home"></div>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Top Deals on Electronics</h1>
+    <p>Smartphones, Laptops, Accessories & More</p>
+    <button>Visit Us</button>
+  </div>
+     <div id="about"></div>
+</header>
+
+<!-- about section -->
+<section class="about-us">
+  <div class="about-container">
+    <h2>About Our Store</h2>
+    <p>
+      Welcome to ElectroZone — your trusted destination for top-quality electronics! From the latest mobile phones to powerful laptops and home appliances, we offer everything with guaranteed quality and unbeatable prices.
+    </p>
+    <p>
+      Our mission is simple: to make technology accessible and affordable for everyone. We’re committed to customer satisfaction, fast delivery, and trusted service.
+    </p>
+    <p>
+      Thousands of happy customers trust us — and we’re just getting started!
+    </p>
+  </div>
+     <div id="offer"></div>
+</section>
+
+
+<!-- promotion section-->
+<section class="promo-section">
+  <h2>Hot Deals & Offers</h2>
+
+  <div class="promo-banner">
+    <h3>Limited Time Offer!</h3>
+    <p>Up to 50% OFF on All Electronics</p>
+    <div class="timer">
+      <span id="days">10</span>d :
+      <span id="hours">00</span>h :
+      <span id="minutes">00</span>m :
+      <span id="seconds">00</span>s
+    </div>
+    <a href="#">Visit Us</a>
+  </div>
+
+  <div class="promo-grid">
+    <div class="promo-card">
+      <h4>Flash Deal</h4>
+      <p>Smartphones up to 40% off</p>
+      <span>Limited Time</span>
+    </div>
+    <div class="promo-card">
+      <h4>Buy 1 Get 1</h4>
+      <p>Accessories Combo Packs</p>
+      <span>Today Only</span>
+    </div>
+    <div class="promo-card">
+      <h4>New Arrival Offer</h4>
+      <p>10% OFF on new Laptops</p>
+      <span>Limited Stock</span>
+    </div>
+  </div>
+     <div id="products"></div>
+</section>
+
+<!-- products section -->
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    
+    <!-- Product Card 1 -->
+    <div class="product-card">
+      <img src="led.jpg" alt="Smart TV">
+      <div class="product-info">
+        <h3>Smart LED TV 42"</h3>
+        <p>Experience stunning clarity with 4K resolution.</p>
+        <span class="price">$499</span>
+        <button>Visit Us</button>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+      <img src="Samsung Galaxy.jpg" alt="Smartphone">
+      <div class="product-info">
+        <h3>Galaxy Z Fold 5</h3>
+        <p>Revolutionary foldable smartphone with high-end performance.</p>
+        <span class="price">$1,299</span>
+        <button>Visit Us</button>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card">
+      <img src="DELL XPS 15.jpg" alt="Laptop">
+      <div class="product-info">
+        <h3>Dell XPS 15</h3>
+        <p>Powerful laptop for creators and professionals.</p>
+        <span class="price">$1,899</span>
+        <button>Visit Us</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- why choose us  -->
+<section class="why-choose-us">
+  <div class="choose-container">
+    <h2>Why Choose Us</h2>
+    <div class="reasons">
+      <div class="reason">
+        <h3>Premium Quality</h3>
+        <p>We offer only the best and most trusted electronic products in the market.</p>
+      </div>
+      <div class="reason">
+        <h3>Secure Payments</h3>
+        <p>All your transactions are encrypted and 100% secure.</p>
+      </div>
+      <div class="reason">
+        <h3>Trusted Store</h3>
+        <p>We’re known for reliability, honest pricing, and customer satisfaction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- catagories -->
+
+
+  <div class="nav-bar">
+    <button class="nav-btn active" data-index="0" data-color="rgb(178, 235, 220, 1)">Mobiles</button>
+    <button class="nav-btn" data-index="1" data-color="rgb(250, 190, 120, 0.5)">Laptops</button>
+    <button class="nav-btn" data-index="2" data-color="rgb(203, 153, 230, 0.5)">Computers</button>
+  </div>
+
+  <div class="section" id="content-section">
+    <p id="section-text">Explore latest Mobile Phones.</p>
+    <div id="images-container"></div>
+      <div id="blog"></div>
+  </div>
+  
+  <!-- blog section -->
+  <section id="blog-section">
+  <h2>Latest Articles</h2>
+  
+  <!-- Featured Blog Post -->
+  <div class="featured-post">
+    <img src="computer.jpg" alt="Featured Post" class="featured-image">
+    <div class="featured-content">
+      <h3><a href="#">Top computer </a></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Read on for more...</p>
+      <a href="#" class="read-more-btn">Read More</a>
+    </div>
+     
+  </div>
+
+  <!-- Blog Post Grid -->
+  <div class="blog-posts-grid">
+    <div class="post">
+      <img src="laptop 1.jpg" alt="Post 1" class="post-thumbnail">
+      <h4><a href="#">Best Laptops for Gaming in 2025</a></h4>
+      <p>Discover the best laptops for an immersive gaming experience...</p>
+      <a href="#" class="read-more-btn">Read More</a>
+    </div>
+    <div class="post">
+      <img src="led.jpg" alt="Post 2" class="post-thumbnail">
+      <h4><a href="#">Why You Should Switch to OLED TVs</a></h4>
+      <p>OLED technology has revolutionized the TV market...</p>
+      <a href="#" class="read-more-btn">Read More</a>
+    </div>
+    <!-- Add more posts here -->
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="#">Tech Reviews</a></li>
+      <li><a href="#">Comparisons</a></li>
+      <li><a href="#">Tips & Tricks</a></li>
+    </ul>
+
+    <h3>Popular Posts</h3>
+    <ul>
+      <li><a href="#">Top 10 Smartphones in 2025</a></li>
+      <li><a href="#">How to Choose the Best Laptop for Students</a></li>
+    </ul>
+  </div>
+     <div id="contact"></div>
+</section>
+  
+  <!-- contact section -->
+  <section class="contact-section">
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+    <p class="contact-intro">
+      We'd love to hear from you! Whether it's a question, feedback, or support — we're always here to help.
+    </p>
+
+    <div class="contact-content">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-box">
+          <h3>Address</h3>
+          <p>ElectroZone Store, 123 Tech Street, Saddar, Karachi, Pakistan</p>
+        </div>
+        <div class="info-box">
+          <h3>Phone</h3>
+          <p>+92 300 1234567<br>+92 321 7654321</p>
+        </div>
+        <div class="info-box">
+          <h3>Email</h3>
+          <p>support@electrozone.com<br>info@electrozone.com</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="contact-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.9985912822246!2d67.03022781499963!3d24.860734584053778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e8e2ab9e12b%3A0x9c3a1799c27a9b89!2sSaddar%2C%20Karachi!5e0!3m2!1sen!2s!4v1586251331830!5m2!1sen!2s" 
+          width="100%" 
+          height="250" 
+          frameborder="0" 
+          style="border:0; border-radius: 10px;" 
+          allowfullscreen="">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- dooter section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-column">
+      <h3>ElectroZone</h3>
+      <p>Your trusted hub for the latest and greatest in electronics. Quality products. Affordable prices.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#offer">Offer</a></li>
+        <li><a href="#products">Products</a></li>
+             <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+   
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 123 Tech Street, Karachi</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Email:</strong> support@electrozone.com</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="icons8-facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="icons8-instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="icons8-youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ElectroZone. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
