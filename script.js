@@ -61,7 +61,7 @@ function toggleMenu() {
     const contents = [
       {
         text: "Explore latest Mobile Phones.",
-        images: ["mobiles.jpg", "mobiles1.png", "mobile2.jpg"]
+        images: ["Mobiles.jpg", "mobiles1.png", "mobile2.jpg"]
       },
       {
         text: "Shop high-performance Laptops.",
